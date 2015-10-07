@@ -16,7 +16,7 @@ public class GameBoard extends JLabel {
 		this.p = p;
 		this.color1 = Color.red;
 		this.color2 = Color.black;
-		this.step = 10;
+		this.step = 4;
 		
 		setLayout(null);
 		setPreferredSize(new Dimension(p.getWidth()*step, p.getHeight()*step));

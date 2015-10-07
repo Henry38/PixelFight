@@ -29,7 +29,7 @@ public class MainWindow extends JFrame {
 	
 	public static void main(String[] args) {
 		
-		final Plateau p = new Plateau(50, 50);
+		final Plateau p = new Plateau(200, 200);
 		final JFrame fen = new MainWindow(p);
 		fen.setVisible(true);
 		
@@ -38,7 +38,7 @@ public class MainWindow extends JFrame {
 			public void run() {
 				while (true) {
 					try {
-						Thread.sleep(10);
+						Thread.sleep(20);
 						p.fight();
 						fen.repaint();
 					} catch (InterruptedException e) {
